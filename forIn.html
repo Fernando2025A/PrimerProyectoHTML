@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       body
+       {
+          background-color: rgb(56, 56, 56);
+          
+       }
+       .normalButtons
+       {
+         background-color: rgb(205, 255, 230);
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         height: auto;
+         width: auto;
+         font-size: 35px;
+         border-style: outset;
+         border-width: 4px;
+         border-radius: 10%;
+         cursor: pointer;
+         border-bottom: 40px;
+         border-color: aquamarine;
+
+         transform: scale(1);
+         transition: transfrom 1s ease-out;
+
+        
+       }
+       .normalButtons:hover
+       {
+         transform: scale(1.2);
+         background-color: rgb(141, 255, 106);
+         box-shadow: 0 0 16px #ff3333;
+       }
+       .normalButtons:active
+       {
+         background-color: rgb(112, 255, 243);
+         border-color: rgba(255, 255, 255, 0);
+         transform: scale(0.95);
+       }
+       #bandeja
+       {
+         font-size: larger;
+         position: fixed;
+         top: 90px;
+         left: 8px;
+       }
+
+       #buscar
+       {
+         font-size: larger;
+         position: fixed;
+         top: 130px;
+         left: 8px;
+       }
+       #canjear
+       {
+         font-size: larger;
+         position: fixed;
+         top: 170px;
+         left: 8px;
+       }
+       #actividad
+       {
+         font-size: larger;
+         position: fixed;
+         top: 210px;
+         left: 8px;
+       }
+       #inventario
+       {
+         font-size: larger;
+         position: fixed;
+         top: 250px;
+         left: 8px;
+       }
+       #inicio
+       {
+         font-size: larger;
+         position: fixed;
+         width: 90px;
+         height: 53px;
+         left: 80px;
+       }
+      #tienda
+       {
+         font-size: larger;
+         position: fixed;
+         width: 90px;
+         height: 53px;
+         right: 8px;
+       }
+       #vender
+       {
+         font-size: larger;
+         position: fixed;
+         width: 90px;
+         height: 53px;
+         right: 105px;
+       }
+       #ofertas
+       {
+         font-size: larger;
+         position: fixed;
+         width: 180px;
+         right: 8px;
+         top: 130px;
+       }
+
+       #ventas
+       {
+         font-size: larger;
+         position: fixed;
+         width: 180px;
+         right: 8px;
+         top: 170px;
+       }
+
+       #resultados
+       {
+         font-size: larger;
+         position: fixed;
+         width: 180px;
+         right: 8px;
+         top: 210px;
+       }
+
+       #otros
+       {
+         font-size: larger;
+         position: fixed;
+         width: 180px;
+         right: 8px;
+         top: 250px;
+       }
+
+       #dinero
+       {
+         position: fixed;
+         font-size: 30px;
+         right: 8px;
+         top: 90px;
+         color: black;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiulo de página</title>
+</head>
+<body>
+   <div>
+      <button class="normalButtons">⚙️</button>
+      <button id="bandeja"  class="normalButtons">Bandeja de Entrada</button>
+      <button id="buscar"   class="normalButtons">Buscar</button>
+      <button id="canjear"  class="normalButtons">Canjear</button>
+      <button id="actividad" class="normalButtons">Actividad</button>
+      <button id="inventario" class="normalButtons">Inventario</button>
+      <button id="inicio" class="normalButtons">Inicio</button>
+      <button id="tienda" class="normalButtons">Tienda</button>
+      <button id="vender" class="normalButtons">Vender</button>
+      <button id="ofertas" class="normalButtons">Nuevas ofertas</button>
+      <button id="ventas" class="normalButtons">Mis ventas</button>
+      <button id="resultados" class="normalButtons">Mis resultados</button>
+      <button id="otros" class="normalButtons">Otros</button>
+
+      <label id="dinero">$10,00</label>
+   </div>
+</body>
+</html>
