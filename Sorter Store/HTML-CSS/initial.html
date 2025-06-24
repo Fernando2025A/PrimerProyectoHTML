@@ -17,6 +17,15 @@
         100% {background-color: rgb(56, 1, 1);}
        }
 
+        @keyframes cambioColorLetras
+       {
+        0% { color: black;}
+        25% {color: #062bff;}
+        50% {color: #09ff00;}
+        75% {color: rgb(255, 0, 0);}
+        100% {color: rgb(140, 0, 255);}
+       }
+
        #tsparticles
        {
         position: fixed;
@@ -40,7 +49,7 @@
          cursor: pointer;
          border-bottom: 40px;
          border-color: aquamarine;
-        
+         animation: cambioColorLetras 8s infinite alternate;
          transform: scale(1);
          transition: transform 0.3s ease-in-out;
 
@@ -164,6 +173,7 @@
        {
          position: fixed;
          font-size: 28px;
+
          right: 8px;
          top: 90px;
          color: rgb(243, 243, 243);
@@ -244,8 +254,8 @@
       <button id="ventas" class="normalButtons">Mis ventas</button>
       <button id="resultados" class="normalButtons">Mis resultados</button>
       <button id="otros" class="normalButtons">Otros</button>
-      <button id="recargar" class="normalButtons">Recargar</button>
-      <label id="dinero">$10,00</label>
+      <button id="recargar" onclick='Recargar()' class="normalButtons">Recargar</button>
+      <label id="dinero"></label>
 
       <input type="text" id="impBuscar" />
 
@@ -273,6 +283,7 @@
     //alert("¡Bienvenido al sitio!")
    </script>
    <script src="../js/functions.js"></script>
+   <script src="../js/dependencies.js"></script>
    <a id="enlace" href="https://www.instagram.com/fer.garcia.1?igsh=YzljYTk1ODg3Zg==">Sigueme en ig ;)</a>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body
+        {
+            background-color: rgb(26, 25, 25);
+        }
+        .normalButtons
+        {
+            position: fixed;
+            cursor: pointer;
+            height: 30px;
+            width: 50px;
+            font-weight: normal;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(105, 105, 105);
+            letter-spacing: 1vh;
+
+            background-color: rgba(240, 248, 255, 0);
+            border-color: rgba(0, 0, 0, 0);
+           
+            
+            transform: scale(1);
+            transition: 0.3s;
+            
+        }
+        .normalButtons:hover
+        {
+          color: aliceblue;
+          text-decoration-color: white;
+          font-weight: bold;
+
+          transition: 0.3s ease-in-out;
+          transform: scale(1.1) ;
+
+            text-decoration: underline;
+           
+            text-underline-offset: 3px;
+            text-decoration-thickness: 3px;
+            text-shadow: 19px;
+            text-decoration-color: rgb(156, 156, 156);
+            
+        }
+        #inicio
+        {
+            top: 85px;
+            left:30px;
+        }
+    </style>
+    
+    <button id="inicio" class="normalButtons">Inicio</button>
+</body>
+</html>
